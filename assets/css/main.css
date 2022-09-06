@@ -1118,6 +1118,8 @@ input, select, textarea {
 		width: 100%;
 		height: 100vh;
 		z-index: 1;
+		background: url('/images/bg-canion.jpg');
+		background-size: cover;
 	}
 
 		#bg:before, #bg:after {
@@ -1140,9 +1142,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
@@ -1293,6 +1298,7 @@ input, select, textarea {
 			line-height: 5.5rem;
 			border: solid 1px #ffffff;
 			border-radius: 100%;
+			overflow: hidden;
 		}
 
 			#header .logo .icon:before {
@@ -1332,6 +1338,14 @@ input, select, textarea {
 				line-height: 2;
 			}
 
+			#header .content img {
+				height: 300px;
+				width: 200px;
+				border-radius: 5px;
+				-webkit-box-shadow: 5px 5px 15px 5px #000000; 
+				box-shadow: 5px 5px 15px 5px #000000;
+			}
+
 		#header nav ul {
 			display: -moz-flex;
 			display: -webkit-flex;
@@ -1346,6 +1360,7 @@ input, select, textarea {
 
 			#header nav ul li {
 				padding-left: 0;
+				background-color: rgba(0, 0, 0, 0.754);
 				border-left: solid 1px #ffffff;
 			}
 
@@ -1363,6 +1378,7 @@ input, select, textarea {
 					letter-spacing: 0.2rem;
 					font-size: 0.8rem;
 					border-bottom: 0;
+					font-size: 15px;
 				}
 
 					#header nav ul li a:hover {
@@ -1546,6 +1562,9 @@ input, select, textarea {
 			background-color: rgba(27, 31, 34, 0.85);
 			border-radius: 4px;
 			opacity: 0;
+		}
+		#main article p {
+			font-size: 20px;
 		}
 
 			#main article.active {
