@@ -1563,7 +1563,7 @@ input, select, textarea {
 			border-radius: 4px;
 			opacity: 0;
 		}
-		#main article p {
+		#main article p, #main article a {
 			font-size: 20px;
 		}
 
